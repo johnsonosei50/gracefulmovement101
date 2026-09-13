@@ -36,8 +36,8 @@ jobs:
           mkdir -p _site/client
           mkdir -p _site/trainer
 
-          cp -R apps/client/. _site/client/
-          cp -R apps/trainer/. _site/trainer/
+          cp -R app/client/. _site/client/
+          cp -R app/trainer/. _site/trainer/
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
